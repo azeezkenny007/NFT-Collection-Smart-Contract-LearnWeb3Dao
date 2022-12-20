@@ -60,3 +60,57 @@ this is what the Nft data on ```opensea``` or ```rarible``` look like.
   
   cons :
    - no on-chain interaction with your Nft
+
+<div style="margin-top:30px"></div>
+
+## 👩‍💻 __COMMANDS TO USE__
+
+
+<div style="margin-top:20px"></div>
+
+> * __To Compile the Contract__   
+
+```solidity
+          yarn hardhat compile
+```
+
+
+> * __To Clear the Compile__ Contract
+
+```solidity
+yarn hardhat clean
+```
+> * __To Deploy the Contract on hardhat__ 
+ ```solidity
+ yarn hardhat run scripts/<scripts file name>
+ ```
+> * __To Deploy the contract to a testnet__ 
+ ```solidity
+yarn hardhat run scripts/<scripts file name> --network <network name> 
+```
+> * __To Run Test on hardhat__   
+ ```solidity
+ yarn hardhat test
+  ```
+> * __To Run Test on a particular network__ 
+```solidity
+yarn hardhat test --network <network name> 
+```
+> * __To Run a paricular Test__ 
+```solidity
+ yarn hardhat test --grep <name of the test in quote>
+ ```
+>  * __To Run a Specific Test on a Particular Network__ 
+ ```solidity
+ yarn hardhat test --grep <name of the test in quote>  --network <network name> 
+ ```
+
+```bash
+   The preffered networks can be found in the hardhat config file
+```
+<div style="margin-top:30px"></div>
+
+## 📱  __Contact__
+- __Phone number - +2348134570701__
+* __Twitter - [ken_okha](https://twitter.com/Ken_okha "ken_okha")__
+* __BlockChain developer__
