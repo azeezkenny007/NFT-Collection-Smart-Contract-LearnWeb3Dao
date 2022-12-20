@@ -10,6 +10,7 @@ const { ethers } = require("hardhat");
 
 async function main() {
    const CryptoDevFactory = await ethers.getContractFactory("CryptoDevs")
+   
    const CryptoDev = await CryptoDevFactory.deploy(METADATA_URL,WHITELIST_CONTRACT_ADDRESS)
    await CryptoDev.deployed()
    console.log('---------- contract has been deployed hurray🚀🚀🚀🚀 ------------------')
