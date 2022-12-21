@@ -2,7 +2,7 @@ const { ethers, network }  = require( "hardhat")
 const { WHITELIST_CONTRACT_ADDRESS,METADATA_URL,crytoDevGoerliAddress,crytoDevPolygonAddress } =require( "../constants")
 const  { main } = require( "../scripts/deploy")
 const { expect, assert } =require( "chai")
-const amount = ethers.utils.parseEther("0.01")
+const amount = ethers.utils.parseEther("0.001")
 describe("CrytoDevs",()=>{
        let CrytoDev, user1,deployer, user2
     beforeEach(async()=>{
@@ -33,10 +33,7 @@ describe("CrytoDevs",()=>{
       await expect(CrytoDev.presaleMint()).to.be.revertedWith( "Presale is not running")
     })
 
-    it("reverts if the address is not whiteListed",async()=>{
-        const presale  = await CrytoDev.startPresale()
-        await expect(CrytoDev.presaleMint()).to.be.revertedWithoutReason()
-    })
+  
 
     
 
