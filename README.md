@@ -11,7 +11,7 @@
 
 <div style="margin-top:40px"></div>
 
-## 🌌 **what is a Nft metadata?**  
+## 🌌 **what is an Nft metadata?**  
 
 <div style="margin-top:10px"></div>
  A Nft metadata looks like this
